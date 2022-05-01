@@ -4,15 +4,16 @@
     --heading-color: white;
     --paragraph-color: #2C6782;
   
-    --heading-font: "Acme", sans-serif;
-    --body-font: "Nunito", sans-serif;
+    --heading-font: "Acme",'Open Sans', sans-serif;
+    --body-font: "Nunito",'Open Sans', sans-serif;
 }
 h1, h2{
     font-family: var(--heading-font);
     text-shadow: 0px 0px 8px rgba(0,0,0,0.74);
 }
+
 h2{
-    font-size: 35px;
+    font-size: 25px;
     color: #333333;
     letter-spacing: 0.1em;
 }
@@ -27,62 +28,44 @@ main p{
 }
 p, li, a{
     font-family: var(--body-font);
-    font-size: 18px;
+    font-size: 16px;
     margin: 0px;
 }
 
-
 body{
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     padding: 50px 0px 0px;
     
 }
-@media(max-width: 600px) {
-    body{
-        width: 95%;
-    }
-    h1{
-        font-size: 35px !important;
-    }
-    h2{
-        font-size: 25px !important;
-    }
-    p, li, a,footer{
-        font-size: 16px !important;
-    }
-}
-@media (min-width: 1100px) {
-    body{
-        width: 50%;
-    }
-}
-header div, footer div{
+
+
+header , footer {
     border-radius: 15px;
     /* overflow: hidden; */
 }
 
-header div , header div img, footer div:first-child{
+header  , header  img, footer{
     box-shadow: 0px 0px 32px 1px rgba(0,0,0,0.74);
     -webkit-box-shadow: 0px 0px 32px 1px rgba(0,0,0,0.74);
     -moz-box-shadow: 0px 0px 32px 1px rgba(0,0,0,0.74);
 }
-header div{
+header {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 3% 5%;
+    padding: 50px 0px 10px;
     background-color: #3376aa;
 
 }
-header div img{
-    width: 25%;
+header  img{
+    width: 60%;
 }
-header div h1{
-    width: 75%;
+header  h1{
+    width: 100%;
     text-align: center;
-    font-size: 47px;
+    font-size: 35px;
 }
 main{
     margin: 20px 0px 50px;
@@ -98,7 +81,7 @@ main li{
 footer{
     margin-bottom: 20px;
 } 
-footer div{
+footer {
     display: flex;
     flex-direction: column;
     align-items: center;

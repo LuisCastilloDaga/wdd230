@@ -1,0 +1,30 @@
+@media(min-width: 32.5em) {
+    body{
+        width: 80%;
+        margin: 0 auto;
+        padding: 50px 0px 0px;
+        
+    }
+    header h1{
+        font-size: 47px;
+    }
+    h2{
+        font-size: 35px;
+    }
+    p, li, a, footer{
+        font-size: 18px;
+    }
+
+    header{
+        flex-direction: row;
+        padding: 3% 5%;
+    }
+    header img{
+        width: 25%;
+    }
+    header h1{
+        width: 75%;
+    }
+
+    
+}
