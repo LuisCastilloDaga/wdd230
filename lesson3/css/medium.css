@@ -1,0 +1,31 @@
+@media(min-width: 32.5em) {
+
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        /* padding: 0px 7.5%; */
+    }
+    main{
+        max-width: 1050px;
+    }
+
+    .document-section img{
+        width: 30%;
+    }
+
+
+    .typo-chart{
+        min-height: 55vh;
+    }
+
+    .color-chart{
+        flex-direction: row;
+        min-height: 50vh;
+        align-items: flex-start;
+    }
+    .col01 div, .col02 div{
+        padding-right: 30px;
+    }
+
+}
