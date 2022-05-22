@@ -300,6 +300,7 @@ footer .logo-footer img{
 }
 
 .cta a{
+    color: white;
     text-decoration: none;
     font-weight: 800;
     justify-self: center;
