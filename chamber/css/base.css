@@ -256,7 +256,7 @@ footer .logo-footer img{
 #hero{
     position: relative;
     overflow: hidden;
-    background-image: url(images/back-hero.jpg);
+    background-image: url(../images/back-hero.jpg);
     min-height: 350px;
 }
 
@@ -319,7 +319,7 @@ footer .logo-footer img{
 /* :::::::  Other cards  :::::: */
 .secondTitle{
     padding: 30px;
-    background-image: url(images/back-confereces.jpg);
+    background-image: url(../images/back-confereces.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
