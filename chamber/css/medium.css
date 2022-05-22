@@ -54,6 +54,37 @@
         padding-left: 40px;
     }
     
-   
+   /*:::::::::BANNER TOP:::::::*/
 
+.banner-top{
+    background-color: #000000;
+    min-height: 120px;
+    display: grid !important;
+    grid-template-columns: 70% 30%;
+    padding: 0 5%;
+    border-radius: 0px 0px 4px 4px;
+}
+.banner{
+    width: 100%;
+    margin: 0 auto;
+}
+.banner-top h2{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+    justify-self: start;
+}
+.banner-top a{
+    justify-self: end;
+    font-size: 16px;
+    padding: 10px 20px !important;
+}
+
+}
+
+/*:::::::::CTA:::::::*/
+
+.cta{
+    grid-template-columns: 75% 25%;
+    
 }
