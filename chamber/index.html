@@ -9,6 +9,7 @@
     <meta name="description" content="This is the website of my chamber of commerce project.">
     <link rel="shortcut icon" href="../myfavicon.ico">
     <script src="js/main.js" defer></script>
+    <script src="js/windchill.js" defer></script>
     <script src="https://kit.fontawesome.com/7264c8c889.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
@@ -24,7 +25,7 @@
             <div class="first-col">
                 <div class="logo">
                     <a href="index.html">
-                        <img src="images/logo.png" alt="main logo">
+                        <img src="images/logo.webp" alt="main logo">
                     </a>
                 </div>
                 <div class="mobile-header">
@@ -65,6 +66,11 @@
 
         <div class="responsive-width">
             <div id="hero" class="mockup-style">
+                <picture>
+                    <source media="(max-width: 520px)" srcset="images/wdd230-org-small.jpg">
+                    <source media="(max-width: 1100px)" srcset="images/wdd230-org-medium.jpg">
+                    <img src="images/wdd230-org-large.jpg" alt="hero-image">  
+                </picture>
                 <h2>Welcome to the Lima North Chamber</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni est nemo corrupti quasi. Atque eos
                     porro doloribus labore molestiae nostrum, incidunt...</p>
@@ -85,10 +91,24 @@
                 </div>
             </div>
             <div id="weather" class="mockup-style secondTitle">
-                <!-- <a class="weatherwidget-io" href="https://forecast7.com/en/n12d05n77d04/lima/?unit=us"
-                    data-label_1="LIMA" data-label_2="WEATHER" data-days="3" data-theme="blue-mountains">LIMA
-                    WEATHER</a> -->
                 <h2>Weather</h2>
+                <div class="weather-data">
+                    <figure>
+                        <img src="images/clouds.png" alt="clouds" >
+                    </figure>
+                    
+                    <div>
+                        <p><span id="temperature">5.4</span> ºC</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="weather-result">
+                    <div>
+                        <p>Wind Speed: <span id="windS">20</span> km/h</p>
+                        <p>Wind Chill: <span id="windChild"></span> </p>
+                    </div>
+                </div>
+
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit....</p>
                 <div class="read-more">
                     <a href="#">Read more</a>
@@ -139,7 +159,7 @@
         <div class="contact-footer">
             <div class="logo-footer">
                 <a href="index.html">
-                    <img src="images/logo.png" alt="logo-footer">
+                    <img src="images/logo.webp" alt="logo-footer">
                 </a>
                 <p>Lima, Peru</p>
             </div>
