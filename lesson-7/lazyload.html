@@ -5,19 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/basic.css">
+    <script src="js/lazyload.js" defer></script>
+    <title>LazyLoad</title>
 </head>
 
 <body>
     <h1>Progressive Loading of Images</h1>
-    <div class="images">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-    </div>
+    <picture>
+        <img src="images/placeholder.jpg" alt="img01" data-src="images/01-pic.jpeg">
+    </picture>
+    <picture>
+        <img src="images/placeholder.jpg" alt="img02" data-src="images/02-pic.jpeg">
+    </picture>
+    <picture>
+        <img src="images/placeholder.jpg" alt="img03" data-src="images/03-pic.jpeg">
+    </picture>
+    <picture>
+        <img src="images/placeholder.jpg" alt="img04" data-src="images/04-pic.jpg">
+    </picture>
+    <picture>
+        <img src="images/placeholder.jpg" alt="img05" data-src="images/05-pic.jpeg">
+    </picture>
+    <picture>
+        <img src="images/placeholder.jpg" alt="img06" data-src="images/06-pic.jpeg">
+    </picture>
 </body>
 
 </html>
