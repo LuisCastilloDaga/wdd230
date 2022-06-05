@@ -34,7 +34,9 @@ p, li, a{
 a:visited{
     color: white;
 }
-
+header{
+    border-bottom: solid 1px #96969636;
+}
 
 header p{
     text-align: center;
@@ -142,6 +144,9 @@ nav a {
 
 nav a:hover {
 	background-color: black;
+}
+main{
+    padding-top: 5%;
 }
 
 main .responsive-width{
@@ -407,4 +412,11 @@ footer .logo-footer img{
 }
 #event{
     background-image: url('../images/back-confereces.jpg');   
+}
+
+/* Images */
+[data-src]{
+    background-color: #eeeeee;
+    min-height: 200px;
+    min-width: 200px;
 }

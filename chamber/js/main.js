@@ -37,12 +37,10 @@ hamb.onclick = function () {
 
 const bannerContent = document.querySelector('.banner');
 
-if ((now.getDay() != 1) && (now.getDay() != 2)) {
-    bannerContent.style.display = "none";
-} else {
-    bannerContent.style.display = "block";
-}
-
-
-
-
+if (bannerContent != null) {
+    if ((now.getDay() != 1) && (now.getDay() != 2)) {
+        bannerContent.style.display = "none";
+    } else {
+        bannerContent.style.display = "block";
+    };
+} 

@@ -10,7 +10,7 @@
     header .responsive-width{
         display: grid;
         grid-template-columns: 20% 70% 10%;
-        min-height: 150px;
+        min-height: 120px;
     }
 
     .mobile-header{
@@ -51,10 +51,11 @@
 
     .date-large{
         position: absolute;
-        align-self: flex-end;
+        align-self: flex-start;
         justify-self: flex-start;
         font-style: italic;
-        font-size: 16px;
+        font-size: 13px;
+        line-height: 2rem;
         font-weight: 400;
     }
 
@@ -84,9 +85,9 @@
     }
 
    
-    /* main{
+    main{
         padding-top: 40px;
-    } */
+    }
 
 
     main .responsive-width{
