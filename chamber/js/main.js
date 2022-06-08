@@ -44,3 +44,4 @@ if (bannerContent != null) {
         bannerContent.style.display = "block";
     };
 } 
+

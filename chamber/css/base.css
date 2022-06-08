@@ -7,7 +7,7 @@
     --heading-font: "Acme",'Open Sans', sans-serif;
     --body-font: "Nunito",'Open Sans', sans-serif;
 }
-h1, h2{
+h1, h2, figcaption{
     font-family: var(--heading-font);
     margin: 0px;
     text-align: center;
@@ -15,11 +15,11 @@ h1, h2{
 h1{
     font-size: 40px;
 }
-h2{
+h2, figcaption{
     font-size: 25px;
     letter-spacing: 0.1em;
 }
-h1, h2{
+h1, h2, figcaption{
     color: var(--heading-color);
 }
 main p{
@@ -415,8 +415,41 @@ footer .logo-footer img{
 }
 
 /* Images */
-[data-src]{
+
+
+.responsive-discover{
+    width: 80%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.responsive-discover figcaption{
+    line-height: 1.2em;
+    padding: 10px 0px;
+}
+.place-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px 40px;
+}
+.responsive-discover figure{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    
+}
+.responsive-discover img{
+    width: 100%;
+}
+.description{
+    margin: 20px 5px 0px;
+}
+.place-section [data-src]{
     background-color: #eeeeee;
     min-height: 200px;
-    min-width: 200px;
+    min-width: 100%;
+    margin: 0 auto;
+    border-radius: 4px;
+    overflow: hidden;
 }
