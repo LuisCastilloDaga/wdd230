@@ -2,7 +2,8 @@
     --blobal-font: 'Ubuntu', sans-serif;
 }
 body{
-    width: 100%;
+    width: auto;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +16,7 @@ table{
     -moz-box-shadow: 10px 10px 14px 1px rgba(10,126,168,0.75);
 }
 td,th{
-    padding: 15px 25px;
+    padding: 8px 15px;
     font-family: var(--blobal-font);
     border: 1px solid #abb3b7;
     margin: 0px;
@@ -28,7 +29,7 @@ thead tr:first-child{
 }
 
 thead tr:first-child th{
-    font-size: 40px;
+    font-size: 26px;
     font-weight: 600;
     line-height: 1.2em;
     color: #000000;
@@ -38,12 +39,12 @@ thead tr:nth-child(2){
 }
 thead tr:nth-child(2) th{
     color: #ffffff;
-    font-size: 25px;
+    font-size: 16px;
     font-weight: 900;
     line-height: 1.2em;
 }
 tbody tr td{
-    font-size: 20px;
+    font-size: 12px;
 }
 tbody tr:nth-child(2n+1){
     background-color: #e7f0ed;
@@ -63,5 +64,5 @@ tbody tr:nth-child(5) td:first-child{
 
 tfoot tr{
     background-color: #7fb8c1;
-    font-size: 16px;
+    font-size: 12px;
 }
