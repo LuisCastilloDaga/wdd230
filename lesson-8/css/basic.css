@@ -9,10 +9,14 @@ body{
     justify-content: center;
     align-items: center;
 }
-
+table{
+    border-spacing: 0px;
+}
 td,th{
     padding: 15px 25px;
     font-family: var(--blobal-font);
+    border: 1px solid #abb3b7;
+    margin: 0px;
 }
 
 td{
@@ -42,9 +46,22 @@ thead tr:nth-child(2) th{
     font-weight: 900;
     line-height: 1.2em;
 }
+tbody tr td{
+    font-size: 20px;
+}
 tbody tr:nth-child(2n+1){
     background-color: #e7f0ed;
 }
 tbody tr:nth-child(2n){
     background-color: #e7ffed;
+}
+
+tbody tr:nth-child(4) td:nth-child(3){
+    background-color: #628ca5;
+    color: white;
+}
+
+
+tbody tr:nth-child(5) td:first-child{
+    font-style: italic;
 }
