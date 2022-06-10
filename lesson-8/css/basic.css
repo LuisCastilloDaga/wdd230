@@ -11,6 +11,9 @@ body{
 }
 table{
     border-spacing: 0px;
+    box-shadow: 10px 10px 14px 1px rgba(10,126,168,0.75);
+    -webkit-box-shadow: 10px 10px 14px 1px rgba(10,126,168,0.75);
+    -moz-box-shadow: 10px 10px 14px 1px rgba(10,126,168,0.75);
 }
 td,th{
     padding: 15px 25px;
@@ -18,15 +21,9 @@ td,th{
     border: 1px solid #abb3b7;
     margin: 0px;
 }
-
 td{
     text-align: center;
 }
-caption {
-    padding: 10px;
-    caption-side: bottom;
-    font-size: .85rem;
-  }
 thead tr:first-child{
     background-color: #7fb8c1;
 }
@@ -61,7 +58,11 @@ tbody tr:nth-child(4) td:nth-child(3){
     color: white;
 }
 
-
 tbody tr:nth-child(5) td:first-child{
     font-style: italic;
+}
+
+tfoot tr{
+    background-color: #7fb8c1;
+    font-size: 16px;
 }
