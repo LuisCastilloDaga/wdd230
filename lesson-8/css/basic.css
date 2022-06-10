@@ -11,7 +11,7 @@ body{
 }
 
 td,th{
-    padding: 10px 20px;
+    padding: 15px 25px;
     font-family: var(--blobal-font);
 }
 
@@ -23,3 +23,22 @@ caption {
     caption-side: bottom;
     font-size: .85rem;
   }
+thead tr:first-child{
+    background-color: #7fb8c1;
+}
+
+thead tr:first-child th{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2em;
+    color: #000000;
+}
+thead tr:nth-child(2){
+    background-color: #628ca5;
+}
+thead tr:nth-child(2) th{
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 1.2em;
+}
