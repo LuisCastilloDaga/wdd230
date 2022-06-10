@@ -1,3 +1,6 @@
+:root {
+    --blobal-font: 'Ubuntu', sans-serif;
+}
 body{
     margin: 0 auto;
     width: 80%;
@@ -9,6 +12,7 @@ body{
 
 td,th{
     padding: 10px 20px;
+    font-family: var(--blobal-font);
 }
 
 td{
