@@ -6,3 +6,16 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+td,th{
+    padding: 10px 20px;
+}
+
+td{
+    text-align: center;
+}
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    font-size: .85rem;
+  }
