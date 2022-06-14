@@ -45,3 +45,20 @@ if (bannerContent != null) {
     };
 } 
 
+/* Number of visits in Discover Page */
+
+const visits = document.querySelector("#nVisits");
+
+let numVisits = Number(window.localStorage.getItem('visits'));
+
+if (numVisits !== 0) {
+    visits.textContent = numVisits;
+} else {
+    visits.textContent = 'This is your first visit!';
+}
+
+numVisits ++;
+
+localStorage.setItem('visits', numVisits);
+
+

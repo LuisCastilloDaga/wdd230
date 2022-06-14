@@ -130,4 +130,26 @@
        max-width: 1300px !important;
     }
 
+    /* Hover effects in Discover Page */
+
+    .place-section:first-child img:hover{
+        box-shadow: 0 0 50px #333;
+        transition: ease-in 0.25s;
+    }
+    .place-section:nth-child(2) img:hover{
+        filter: blur(1px) grayscale(100%);
+        transition: ease-in 0.25s;
+    }
+    .place-section:nth-child(3) img:hover{
+        transform: scale(125%);
+        transition: ease-in 0.25s;
+    }
+    .place-section:nth-child(4) img:hover{
+        border-radius: 50%;
+        transition: ease-in 0.25s;
+    }
+    .place-section:nth-child(5) img:hover{
+        transform: rotate3d(0, 1, 0, 180deg);
+        transition: ease-in 0.9s;
+    }
 }
