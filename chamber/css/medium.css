@@ -89,7 +89,7 @@
 }
 
 
-.responsive-discover .place-section{
+.responsive-intern .place-section{
     display: grid;
     grid-template-columns: 30% 70%;
     gap: 30px;

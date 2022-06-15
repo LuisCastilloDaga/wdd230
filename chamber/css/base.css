@@ -420,12 +420,12 @@ footer .logo-footer img{
 /* Images in Discover page */
 
 
-.responsive-discover{
+.responsive-intern{
     width: 80%;
     max-width: 1300px;
     margin: 0 auto;
 }
-.responsive-discover figcaption{
+.responsive-intern figcaption{
     line-height: 1.2em;
     padding: 10px 0px;
 }
@@ -436,13 +436,13 @@ footer .logo-footer img{
     align-items: center;
     margin: 20px 0px 40px;
 }
-.responsive-discover figure{
+.responsive-intern figure{
     margin: 0px;
     padding: 0px;
     width: 100%;
     
 }
-.responsive-discover img{
+.responsive-intern img{
     width: 100%;
 }
 .description{
