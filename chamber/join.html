@@ -64,7 +64,23 @@
                </div>
                <div>
                    <form action="thankyou.html" method="get">
-                       
+                       <label>First Name*<input type="text" required></label>
+                       <label>Last Name*<input type="text" required></label>
+                       <label>Business Position<input type="text"></label>
+                       <label>Email*<input type="email" required placeholder="Ex. info@mybusiness.com"></label>
+                       <label>Cell Phone Number*<input type="tel" required></label>
+                       <label>Business Name*<input type="text" required></label>
+                       <label>Membership Level 
+                           <select name="membership">
+                               <option value="">Select a membership level</option>
+                               <option value="">NP Membership</option>
+                               <option value="">Bronze Membership</option>
+                               <option value="">Silver Membership</option>
+                               <option value="">Gold Membership</option>
+                           </select>
+                        </label>
+                       <label>Description<textarea name="description" rows="4" placeholder="Give us a brief description of your business. "></textarea></label>
+                       <label hidden><input type="datetime-local"></label>
                    </form>
                </div>
            </div>
