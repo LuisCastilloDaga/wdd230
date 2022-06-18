@@ -71,12 +71,3 @@ window.onunload = function () {
     localStorage.setItem('time', timeVisits.toFixed(0));
 
 }
-
-
-
-
-
-
-
-
-

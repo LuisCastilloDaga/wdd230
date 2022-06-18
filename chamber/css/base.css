@@ -485,3 +485,10 @@ footer .logo-footer img{
 #visit p{
     font-size: 13px;
 }
+
+/*  JOIN CSS */
+
+.form-section{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
