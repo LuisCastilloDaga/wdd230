@@ -47,18 +47,36 @@ if (bannerContent != null) {
 
 /* Number of visits in Discover Page */
 
-const visits = document.querySelector("#nVisits");
+const totalTime = document.querySelector("#timestamp");
 
-let numVisits = Number(window.localStorage.getItem('visits'));
+let timeVisits = Number(window.localStorage.getItem('time'));
+var start = new Date();
+var calculateTime;
+console.log(start);
 
-if (numVisits !== 0) {
-    visits.textContent = numVisits;
+
+if (timeVisits<=1) {
+    totalTime.textContent = `${timeVisits} day.`;
 } else {
-    visits.textContent = 'This is your first visit!';
+    totalTime.textContent = `${timeVisits} days.`;
 }
 
-numVisits ++;
 
-localStorage.setItem('visits', numVisits);
+window.onunload = function () {
+    var closeWindow = new Date();
+    calculateTime = closeWindow-start;
+    timeVisits = timeVisits + ((calculateTime/1000)/3600)/24;
+
+   
+    localStorage.setItem('time', timeVisits.toFixed(0));
+
+}
+
+
+
+
+
+
+
 
 
