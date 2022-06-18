@@ -522,9 +522,13 @@ footer .logo-footer img{
 }
 
 .form-section label{
-    padding-bottom: 12px;
+    padding-bottom: 16px;
+    letter-spacing: 0.05em;
     line-height: 2em;
     font-weight: bold;
+    font-size: 14px;
+    font-family:var(--heading-font) !important;
+
 }
 
 .form-section input{
@@ -544,6 +548,7 @@ footer .logo-footer img{
 .form-section textarea{
     border: 1px solid rgba(128, 128, 128, 0.473);
     border-radius: 4px;
+    padding: 10px 10px;
 }
 
 input[type=submit]{
