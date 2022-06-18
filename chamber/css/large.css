@@ -152,4 +152,19 @@
         transform: rotate3d(0, 1, 0, 180deg);
         transition: ease-in 0.9s;
     }
+
+    /*  JOIN PAGE CSS */
+
+    .two-col-form{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .two-col-form label:first-child{
+        padding-right: 10px;
+    }
+    
+    .two-col-form label:nth-child(2){
+        padding-left: 10px;
+    }
+    
 }

@@ -494,7 +494,12 @@ footer .logo-footer img{
     display: flex;
     flex-direction: column;
 }
+.form-section div:first-child p{
+    font-size: 18px;
+    line-height: 1.2em;
+    font-family: var(--body-font);
 
+}
 .form-section div:first-child h1{
     text-align: left !important;
     font-size: 60px;
@@ -502,7 +507,7 @@ footer .logo-footer img{
 
 .form-section div:nth-child(2){
     padding-top: 40px;
-}
+} 
 .form-section div:nth-child(2) form{
     display: flex;
     flex-direction: column;

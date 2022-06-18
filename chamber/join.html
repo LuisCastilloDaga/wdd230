@@ -57,35 +57,41 @@
 
     <main>
         <div class="responsive-intern">
-           <div class="form-section">
-               <div>
-                   <h1>Join Us!</h1>
-                   <p>Fill the next form and we will proceed to create your account to be part of our big team in Lima Noth.</p>
-               </div>
-               <div>
-                   <form method="get" action="thankyou.html">
-                       <label>First Name*<input type="text" required></label>
-                       <label>Last Name*<input type="text" required></label>
-                       <label>Business Position<input type="text"></label>
-                       <label>Email*<input type="email" required placeholder="Ex. info@mybusiness.com"></label>
-                       <label>Cell Phone Number*<input type="tel" required></label>
-                       <label>Business Name*<input type="text" required></label>
-                       <label>Membership Level 
-                           <select name="membership">
-                               <option value="">Select a membership level</option>
-                               <option value="">NP Membership</option>
-                               <option value="">Bronze Membership</option>
-                               <option value="">Silver Membership</option>
-                               <option value="">Gold Membership</option>
-                           </select>
+            <div class="form-section">
+                <div>
+                    <h1>Join Us!</h1>
+                    <p>Fill the next form and we will proceed to create your account to be part of our big team in Lima
+                        Noth.</p>
+                </div>
+                <div>
+                    <form method="get" action="thankyou.html">
+                        <div class="two-col-form">
+                            <label>First Name*<input type="text" name="first-name" required></label>
+                            <label>Last Name*<input type="text" name="last-name" required></label>
+                        </div>
+                        <label>Business Position<input type="text"></label>
+                        <div class="two-col-form">
+                            <label>Email*<input type="email" name="email" required placeholder="Ex. info@mybusiness.com"></label>
+                            <label>Cell Phone Number*<input type="tel" name="phone-number" required></label>
+                        </div>
+                        <label>Business Name*<input type="text" name="bussines-name" required></label>
+                        <label>Membership Level
+                            <select type="select" name="membership">
+                                <option value="">Select a membership level</option>
+                                <option value="">NP Membership</option>
+                                <option value="">Bronze Membership</option>
+                                <option value="">Silver Membership</option>
+                                <option value="">Gold Membership</option>
+                            </select>
                         </label>
-                       <label>Description<textarea name="description" rows="4" placeholder="Give us a brief description of your business. "></textarea></label>
-                       <label class="hidden"><input type="datetime-local"></label>
-                       <label><input type="submit" value="SUBMIT"></label> 
-                   </form>
-               </div>
-           </div>
-            
+                        <label>Description<textarea name="description" rows="4"
+                                placeholder="Give us a brief description of your business. "></textarea></label>
+                        <label class="hidden"><input type="datetime-local" name="date"></label>
+                        <label><input type="submit" value="SUBMIT"></label>
+                    </form>
+                </div>
+            </div>
+
         </div>
     </main>
 
