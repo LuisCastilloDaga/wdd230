@@ -512,6 +512,20 @@ footer .logo-footer img{
     flex-direction: column;
 }
 
-.form-section div:nth-child(2) label:last-child{
+.form-section label:last-child{
     display: none !important;
+}
+
+.form-section label{
+    padding-bottom: 12px;
+    line-height: 2em;
+    font-weight: bold;
+}
+
+.form-section input{
+    height: 30px;
+}
+
+.form-section select{
+    height: 35px;
 }
