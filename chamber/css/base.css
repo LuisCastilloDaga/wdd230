@@ -512,7 +512,7 @@ footer .logo-footer img{
     flex-direction: column;
 }
 
-.form-section label:last-child{
+.form-section label.hidden{
     display: none !important;
 }
 
