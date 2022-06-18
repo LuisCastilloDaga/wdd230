@@ -97,6 +97,15 @@
 
 
 
+/*  JOIN PAGE CSS */
+
+.form-section{
+    padding: 100px 50px 120px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 30px;
+}
+
 
 }
 

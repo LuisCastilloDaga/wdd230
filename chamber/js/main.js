@@ -49,25 +49,28 @@ if (bannerContent != null) {
 
 const totalTime = document.querySelector("#timestamp");
 
-let timeVisits = Number(window.localStorage.getItem('time'));
-var start = new Date();
-var calculateTime;
-console.log(start);
+if (totalTime!=null) {
+    let timeVisits = Number(window.localStorage.getItem('time'));
+    var start = new Date();
+    var calculateTime;
+    console.log(start);
 
 
-if (timeVisits<=1) {
-    totalTime.textContent = `${timeVisits} day.`;
-} else {
-    totalTime.textContent = `${timeVisits} days.`;
+    if (timeVisits<=1) {
+        totalTime.textContent = `${timeVisits} day.`;
+    } else {
+        totalTime.textContent = `${timeVisits} days.`;
+    }
+
+
+    window.onunload = function () {
+        var closeWindow = new Date();
+        calculateTime = closeWindow-start;
+        timeVisits = timeVisits + ((calculateTime/1000)/3600)/24;
+
+    
+        localStorage.setItem('time', timeVisits.toFixed(0));
+
+    }
 }
 
-
-window.onunload = function () {
-    var closeWindow = new Date();
-    calculateTime = closeWindow-start;
-    timeVisits = timeVisits + ((calculateTime/1000)/3600)/24;
-
-   
-    localStorage.setItem('time', timeVisits.toFixed(0));
-
-}
