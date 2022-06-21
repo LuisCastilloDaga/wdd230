@@ -2,18 +2,27 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    margin: 0px;
+    margin: 0px auto;
 }
 
-.cards, header, section{
+header, section{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 6px;
+    padding: 15px;
+    background-color: #dddddd;
+    box-shadow: 1px 2px 25px 0px rgba(0,0,0,0.75);
+}
 
 section{
     background-color: #b9b9cb;
-    margin: 6px 0px;
+    margin: 0px;
+    border: solid 2px #7b7bab;
 }
 
 h1, h2, p{
@@ -29,5 +38,13 @@ p{
     margin: 0px;
 }
 img{
-    padding: 20px 50px;
+    margin: 20px 50px;
+    box-shadow: 1px 2px 25px 0px rgba(0,0,0,0.75);
+}
+footer{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    line-height: 1.5em;
 }
