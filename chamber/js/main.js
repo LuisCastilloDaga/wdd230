@@ -62,7 +62,7 @@ if (totalTime!=null) {
     } else if (calculateTime == 1){
         totalTime.textContent = `Your last visit was ${calculateTime} day ago.`;
     }else{
-        totalTime.textContent = `This is your fisrt day with us!`;
+        totalTime.textContent = `Welcome. This is your fisrt day with us!`;
     }
 
 
