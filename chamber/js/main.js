@@ -45,31 +45,33 @@ if (bannerContent != null) {
     };
 } 
 
-/* Number of visits in Discover Page */
+/* Number of visits since your last Discover Page */
 
 const totalTime = document.querySelector("#timestamp");
 
 if (totalTime!=null) {
-    let timeVisits = Number(window.localStorage.getItem('time'));
     var start = new Date();
-    var calculateTime;
-    console.log(start);
+    var lastVisit = Number(window.localStorage.getItem('time')) == 0 ? start : new Date(window.localStorage.getItem('time'));
+
+    
+    var calculateTime = ((((start-lastVisit)/1000)/3600)/24).toFixed(0);
 
 
-    if (timeVisits<=1) {
-        totalTime.textContent = `${timeVisits} day.`;
-    } else {
-        totalTime.textContent = `${timeVisits} days.`;
+    if (calculateTime != 0 && calculateTime != 1) {
+        totalTime.textContent = `Your last visit was ${calculateTime} days ago.`;
+    } else if (calculateTime == 1){
+        totalTime.textContent = `Your last visit was ${calculateTime} day ago.`;
+    }else{
+        totalTime.textContent = `This is your fisrt day with us!`;
     }
+
 
 
     window.onunload = function () {
         var closeWindow = new Date();
-        calculateTime = closeWindow-start;
-        timeVisits = timeVisits + ((calculateTime/1000)/3600)/24;
 
     
-        localStorage.setItem('time', timeVisits.toFixed(0));
+        localStorage.setItem('time', closeWindow);
 
     }
 }
