@@ -62,7 +62,7 @@ if (totalTime!=null) {
     } else if (calculateTime == 1){
         totalTime.textContent = `Your last visit was ${calculateTime} day ago.`;
     }else{
-        totalTime.textContent = `Welcome. Your visit was less than a day ago.`;
+        totalTime.textContent = `Welcome. Your last visit was less than a day ago.`;
     }
 
 
@@ -76,3 +76,51 @@ if (totalTime!=null) {
     }
 }
 
+
+/* Directory Cards */
+const requestURL = 'json/data.json';
+const cards = document.querySelector('.cards');
+
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    console.table(jsonObject);  // temporary checking for valid response and data parsing
+    const business = jsonObject['business'];
+
+    business.forEach(displayBusiness);
+  });
+
+function displayBusiness(bus) {
+    let card = document.createElement('section');
+    let h2 = document.createElement('h2');
+    let ul = document.createElement('ul');
+    let li1 = document.createElement('li');
+    let li2 = document.createElement('li');
+    let li3 = document.createElement('li');
+    let span = document.createElement('span');
+    let portrait = document.createElement('img');
+
+    h2.textContent = `${bus.name}`;
+    li1.innerHTML = `<strong>Address:</strong> ${bus.address}`;
+    li2.innerHTML = `<strong>Phone number:</strong> ${bus.phone}`;
+    li3.innerHTML = `<strong>Membership Level:</strong> ${bus.mLevel}`;
+    span.textContent = `Since ${bus.year}`;
+
+    portrait.setAttribute('src', bus.img);
+    portrait.setAttribute('alt', `Portrait of ${bus.name}`);
+    span.setAttribute('class','year');
+    card.setAttribute('loading', 'lazy');
+
+    ul.append(li1, li2, li3);
+
+    card.appendChild(h2);
+    card.appendChild(portrait);
+    card.appendChild(ul);
+    card.appendChild(span);
+
+
+    document.querySelector('div.cards').appendChild(card);
+
+}
