@@ -81,7 +81,8 @@ if (totalTime!=null) {
 const requestURL = 'json/data.json';
 const cards = document.querySelector('.cards');
 
-fetch(requestURL)
+if (cards != null) {
+    fetch(requestURL)
   .then(function (response) {
     return response.json();
   })
@@ -91,6 +92,8 @@ fetch(requestURL)
 
     business.forEach(displayBusiness);
   });
+}
+
 
 function displayBusiness(bus) {
     let card = document.createElement('section');
