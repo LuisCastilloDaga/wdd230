@@ -565,3 +565,63 @@ input[type=submit]{
     width: 25%;
     margin-top: 10px;
 }
+
+/* Directory Page */
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 60px;
+    padding: 80px 0px;
+}
+
+.cards section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #e6faf4;
+    padding: 20px;
+    position: relative;
+    min-height: 420px;
+}
+
+
+.cards section div{
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.cards section div img{
+    max-height: 180px;
+    width: 70%;
+    
+}
+.cards section span{
+    text-align: center;
+    font-style: italic;
+}
+.cards section ul{
+    list-style: none;
+}
+.cards strong{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cards ul li{
+    font-size: 14px;
+    padding: 5px 0px;
+}
+.cards a{
+    text-align: center;
+    padding: 12px 0px 10px;
+    line-height: 1.2em;
+    text-decoration: none;
+    width: 30%;
+    color: white;
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    position: absolute;
+    bottom: 25px;
+}

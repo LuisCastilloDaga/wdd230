@@ -78,6 +78,7 @@ if (totalTime!=null) {
 
 
 /* Directory Cards */
+
 const requestURL = 'json/data.json';
 const cards = document.querySelector('.cards');
 
@@ -103,6 +104,8 @@ function displayBusiness(bus) {
     let li2 = document.createElement('li');
     let li3 = document.createElement('li');
     let span = document.createElement('span');
+    let div = document.createElement('div');
+    let a = document.createElement('a');
     let portrait = document.createElement('img');
 
     h2.textContent = `${bus.name}`;
@@ -110,19 +113,22 @@ function displayBusiness(bus) {
     li2.innerHTML = `<strong>Phone number:</strong> ${bus.phone}`;
     li3.innerHTML = `<strong>Membership Level:</strong> ${bus.mLevel}`;
     span.textContent = `Since ${bus.year}`;
+    a.textContent = 'Website';
 
     portrait.setAttribute('src', bus.img);
     portrait.setAttribute('alt', `Portrait of ${bus.name}`);
     span.setAttribute('class','year');
+    a.setAttribute('href',bus.url)
     card.setAttribute('loading', 'lazy');
 
+    div.appendChild(portrait);
     ul.append(li1, li2, li3);
 
     card.appendChild(h2);
-    card.appendChild(portrait);
-    card.appendChild(ul);
+    card.appendChild(div);
     card.appendChild(span);
-
+    card.appendChild(ul);
+    card.appendChild(a);
 
     document.querySelector('div.cards').appendChild(card);
 
