@@ -635,3 +635,9 @@ input[type=submit]{
     position: absolute;
     bottom: 25px;
 }
+.toggle-section{
+    margin: 50px 0px 0px;
+}
+.toggle-section i{
+    
+}
