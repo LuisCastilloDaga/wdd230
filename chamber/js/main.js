@@ -1,8 +1,8 @@
 const now = new Date();
-
+console.log(now);
 const d = new Date(document.lastModified);
 const day = d.getDate();
-const month = d.getMonth();
+const month = d.getMonth()+1;
 const year = d.getFullYear();
 const hours = d.getHours();
 const minutes = d.getMinutes();
@@ -74,6 +74,13 @@ if (totalTime!=null) {
         localStorage.setItem('time', closeWindow);
 
     }
+}
+
+/* Join Page: Form */
+
+var datetimeField = document.querySelector('#date-time-local');
+if (datetimeField != null) {
+    datetimeField.textContent = `${now.getMonth()+1}/${now.getDate()}/${now.getFullYear()} ${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`;    
 }
 
 

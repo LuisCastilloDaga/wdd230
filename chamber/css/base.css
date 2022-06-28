@@ -566,6 +566,11 @@ input[type=submit]{
     margin-top: 10px;
 }
 
+.membership{
+    display: none;
+}
+
+
 /* Directory Page */
 
 .cards{

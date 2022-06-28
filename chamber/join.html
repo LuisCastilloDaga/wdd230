@@ -62,6 +62,17 @@
                     <h1>Join Us!</h1>
                     <p>Fill the next form and we will proceed to create your account to be part of our big team in Lima
                         Noth.</p>
+                    <div class="membership">
+                        <h2>Membership Level</h2>
+                        <p><strong>Non Profit Organizacion:</strong> 
+                            <br>This membership level has basic benefits like having their contact info on our directory page, being part of our public conferences, and cost is excepted of fees. </p>
+                        <p><strong>Bronze Membership:</strong>
+                            <br>This membership level has the basic benefits, and 15% off in our business conferences and general capacitation, and personal capacitation 2 times per month. The cost is $39/month.</p>
+                        <p><strong>Silver Membership:</strong> 
+                            <br>This membership level has the basic benefits, 30% off in our business conferences, general capacitation, you will be assigned to a personal coach (personal capacitation 5 times per month), and spotlights on our homepage (once per month). The cost is $79/month.</p>
+                        <p><strong>Gold Membership:</strong> 
+                            <br>With this membership level, you will be located in our VIP place at each conference and capacitation, you will be assigned to a personal coach and he or she will be for you the times you want, and spotlights on our homepage (3 times per month). The cost is $149/month.</p>
+                    </div>
                 </div>
                 <div>
                     <form method="get" action="thankyou.html">
@@ -69,14 +80,14 @@
                             <label>First Name*<input type="text" name="first-name" required></label>
                             <label>Last Name*<input type="text" name="last-name" required></label>
                         </div>
-                        <label>Business Position<input type="text"></label>
+                        <label>Business Position<input type="text" name="bussines-position" pattern="[A-Za-z_\-\s]{7,}"></label>
                         <div class="two-col-form">
                             <label>Email*<input type="email" name="email" required placeholder="Ex. info@mybusiness.com"></label>
                             <label>Cell Phone Number*<input type="tel" name="phone-number" required></label>
                         </div>
                         <label>Business Name*<input type="text" name="bussines-name" required></label>
                         <label>Membership Level
-                            <select type="select" name="membership">
+                            <select name="membership">
                                 <option value="">Select a membership level</option>
                                 <option value="">NP Membership</option>
                                 <option value="">Bronze Membership</option>
@@ -86,7 +97,7 @@
                         </label>
                         <label>Description<textarea name="description" rows="4"
                                 placeholder="Give us a brief description of your business. "></textarea></label>
-                        <label class="hidden"><input type="datetime-local" name="date"></label>
+                        <label class="hidden"><input type="text" name="date" id="date-time-local"></label>
                         <label><input type="submit" value="SUBMIT"></label>
                     </form>
                 </div>
