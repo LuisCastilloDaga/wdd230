@@ -140,3 +140,18 @@ function displayBusiness(bus) {
     document.querySelector('div.cards').appendChild(card);
 
 }
+
+
+const listBtn = document.querySelector('#list');
+const gridBtn = document.querySelector('#grid');
+
+gridBtn.onclick = function () {
+    cards.classList.add("grid");
+	cards.classList.remove("list");
+    
+}
+
+listBtn.onclick = function () {
+    cards.classList.add("list");
+	cards.classList.remove("grid");
+}
