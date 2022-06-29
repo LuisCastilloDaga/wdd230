@@ -185,4 +185,53 @@
         font-size: 14px;
         line-height: 1.5em;
     }
+
+    
+    /* DIRECTORY PAGE  */
+
+    .list section{
+        display: grid;
+        gap: 15px;
+        grid-template: 50px 150px/2fr 4fr 1fr !important;
+        
+    }
+    .list section div {
+        grid-area: 2/1/3/2;
+        height: 150px;
+        display: flex;
+        align-items: flex-start;
+    }
+    .list section div img{
+        max-height: 150px;
+        width: 40%;
+        
+    }
+    .list section ul{
+        grid-area: 1/2/3/3;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .list ul li{
+        font-size: 16px;
+        padding: 5px 0px;
+    }
+    .list a{
+        grid-area: 1/3/3/4;
+        text-align: center;
+        padding: 12px 20px 10px;
+        font-weight: bolder;
+        font-family: var(--heading-font);
+        letter-spacing: 0.1em;
+        line-height: 1.2em;
+        text-decoration: none;
+        color: white;
+        background-color: var(--secondary-color);
+        border-radius: 12px;
+        display: flex;
+        justify-self: center;
+        align-self: center;
+    }
+
 }

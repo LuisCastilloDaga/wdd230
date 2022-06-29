@@ -608,17 +608,17 @@ input[type=submit]{
     width: 70%;
     
 }
-.grid section span{
+.cards section span{
     text-align: center;
     font-style: italic;
 }
-.grid section ul{
+.cards section ul{
     list-style: none;
 }
-.grid strong{
+.cards strong{
     font-family: Arial, Helvetica, sans-serif;
 }
-.grid ul li{
+.cards ul li{
     font-size: 14px;
     padding: 5px 0px;
 }
@@ -641,7 +641,69 @@ input[type=submit]{
 .list{
     display: block;
     padding: 40px 0px;
-    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+.list section{
+    display: grid;
+    gap: 15px;
+    grid-template: 50px 150px 50px/1fr 1fr !important;
+    
+    background-color: #e6faf4;
+    margin-bottom: 50px;
+    padding: 40px;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.13);
+    overflow: hidden;
+    
+}
+.list section h2{
+    text-align: left !important;
+    grid-area: 1/1/2/2;
+    display: flex;
+    align-items: center;
+}
+.list section div {
+    grid-area: 2/1/3/2;
+    height: 150px;
+    display: flex;
+    align-items: flex-start;
+}
+.list section div img{
+    max-height: 150px;
+    width: 80%;
+    
+}
+.list section ul{
+    grid-area: 1/2/3/3;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.list ul li{
+    font-size: 16px;
+    padding: 5px 0px;
+}
+.list a{
+    grid-area: 3/2/4/3;
+    text-align: center;
+    padding: 12px 20px 10px;
+    font-weight: bolder;
+    font-family: var(--heading-font);
+    letter-spacing: 0.1em;
+    line-height: 1.2em;
+    text-decoration: none;
+    color: white;
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    display: flex;
+    justify-self: flex-start;
+    align-self: center;
+}
+.list section span{
+    position: absolute;
+    left: 40px;
+    bottom: 35px;
 }
 
 .toggle-section{
