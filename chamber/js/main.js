@@ -145,13 +145,54 @@ function displayBusiness(bus) {
 const listBtn = document.querySelector('#list');
 const gridBtn = document.querySelector('#grid');
 
-gridBtn.onclick = function () {
-    cards.classList.add("grid");
-	cards.classList.remove("list");
+if (listBtn!= null && gridBtn !=null) {
+    gridBtn.onclick = function () {
+        cards.classList.add("grid");
+        cards.classList.remove("list");
+        
+    }
     
-}
+    listBtn.onclick = function () {
+        cards.classList.add("list");
+        cards.classList.remove("grid");
+    }
+    
+} 
 
-listBtn.onclick = function () {
-    cards.classList.add("list");
-	cards.classList.remove("grid");
+
+/* WEATHER API */
+
+const temperature = document.querySelector('#temperature');
+const weatherIcon = document.querySelector('#weather-ic');
+
+const url = 'https://api.openweathermap.org/data/2.5/weather?q=Lima&appid=6725ba7850ae02903340395b04dba12f&units=metric';
+
+async function apiFetch() {
+    try {
+      const response = await fetch(url);
+      if (response.ok) {
+        const data = await response.json();
+        console.log(data); // this is for testing the call
+        
+        weatherResults(data);
+
+      } else {
+          throw Error(await response.text());
+      }
+    } catch (error) {
+        console.log(error);
+    }
+  }
+  
+  apiFetch();
+
+function weatherResults(weatherData) {
+    temperature.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
+
+    const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+    const desc = weatherData.weather[0].description;
+
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', desc);
+
 }

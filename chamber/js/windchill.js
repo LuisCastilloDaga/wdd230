@@ -9,7 +9,7 @@ function changetoMph(y) {
     return y*0.621371;
 }
 
-const temp = changeCtF(parseFloat(document.querySelector("#temperature").textContent));
+const temp = changeCtF(parseFloat(document.querySelector(".temp").textContent));
 const windS = changetoMph(parseFloat(document.querySelector('#windS').textContent));
 var windChild;
 
