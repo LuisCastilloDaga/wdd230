@@ -164,6 +164,8 @@ if (listBtn!= null && gridBtn !=null) {
 
 const temperature = document.querySelector('#temperature');
 const weatherIcon = document.querySelector('#weather-ic');
+const windSpeed = document.querySelector('#windS');
+const condition = document.querySelector('#condition');
 
 const url = 'https://api.openweathermap.org/data/2.5/weather?q=Lima&appid=6725ba7850ae02903340395b04dba12f&units=metric';
 
@@ -188,11 +190,13 @@ async function apiFetch() {
 
 function weatherResults(weatherData) {
     temperature.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
+    windSpeed.textContent = weatherData.wind.speed.toFixed(2);
+    
 
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     const desc = weatherData.weather[0].description;
 
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
-
+    condition.textContent = desc;
 }

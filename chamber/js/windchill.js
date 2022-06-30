@@ -6,7 +6,7 @@ function changeFtC(z) {
     return (z-32)*5/9;
 }
 function changetoMph(y) {
-    return y*0.621371;
+    return y*2.23694;
 }
 
 const temp = changeCtF(parseFloat(document.querySelector(".temp").textContent));

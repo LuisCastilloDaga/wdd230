@@ -392,11 +392,39 @@ footer .logo-footer img{
     align-items: center;
 }
 .weather-data figure{
-    max-width: 50%;
+    min-width: 25%;
     margin: 0px;
 }
 .weather-data img{
     width: 100%;
+}
+.weather-data p span, .weather-data p{
+    font-size: 22px !important;
+}
+.openWeather a{
+    font-size: 13px !important;
+}
+.openWeather strong{
+    font-family: Tahoma;
+    font-weight: 600;
+}
+#condition{
+    text-transform: capitalize;
+    text-align: center;
+    color: white;
+    font-family: Tahoma;
+    font-weight: 600
+
+}
+.license{
+    margin-bottom: 30px !important;
+    padding: 0px !important;
+    width: 85% !important;
+}
+.license strong, .license p{
+    color: var(--paragraph-color);
+    font-family: Arial;
+    font-size: 15px !important;
 }
 
 /* Background Images */
