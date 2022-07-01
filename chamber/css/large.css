@@ -141,7 +141,7 @@
         transition: ease-in 0.25s;
     }
     .place-section:nth-child(3) img:hover{
-        transform: scale(125%);
+        transform: scale(1.25);
         transition: ease-in 0.25s;
     }
     .place-section:nth-child(4) img:hover{
