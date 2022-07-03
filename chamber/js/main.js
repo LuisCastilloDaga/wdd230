@@ -91,7 +91,7 @@ const cards = document.querySelector('.cards');
 
 if (cards != null) {
     fetch(requestURL)
-  .then(function (response) {
+    .then(function (response) {
     return response.json();
   })
   .then(function (jsonObject) {
@@ -200,3 +200,35 @@ function weatherResults(weatherData) {
     weatherIcon.setAttribute('alt', desc);
     condition.textContent = desc;
 }
+
+/* Randomly Select Spotlight */
+/* 
+const requestData = 'json/data.json';
+const spotlights = document.querySelector('#spotlight');
+var listMember = [];
+
+if (spotlights != null && listMember != null) {
+    fetch(requestData)
+    .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    console.table(jsonObject);  // temporary checking for valid response and data parsing
+    const business = jsonObject['business'];
+
+    business.forEach(filterList);
+
+    business.forEach(displaySpotlight);
+  });
+}
+function random(min, max) {
+    return Math.floor((Math.random() * (max - min + 1)) + min);
+}
+
+function filterList(bus) {
+    
+    if (bus.mLevel == 'Silver' || bus.mLevel == 'Gold') {
+        listMember.push(bus.order)
+    } 
+
+} */
