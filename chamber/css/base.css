@@ -590,6 +590,7 @@ input[type=submit]{
     border-radius: 4px;
     cursor: pointer;
     min-height: 40px;
+    min-width: 85px;
     width: 25%;
     margin-top: 10px;
 }
@@ -758,4 +759,38 @@ input[type=submit]{
 .toggle-section .fa-grip::before{
     font-size: 20px !important;
     margin-right: 10px;
+}
+
+
+/* Contact Page */
+
+.contact-infor ul{
+    list-style: none;
+    margin-top: 40px;
+    padding: 0px;
+}
+.contact-infor li{
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.contact-infor strong{
+    font-family: Arial;
+}
+.contact-infor i{
+    font-size: 22px;
+    margin-right: 15px;
+    padding: 0px !important;
+}
+.contact-infor p{
+    padding: 0px !important;
+}
+.left-align{
+    justify-content: flex-start !important;
+}
+.left-align i{
+    margin-top: 40px;
+    font-size: 25px !important;
 }
