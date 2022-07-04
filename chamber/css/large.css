@@ -41,11 +41,10 @@
         border: 3px solid;
     }
 
-    nav a:hover{
+    nav a:hover, nav a.active{
         position: relative;
         background-color: transparent;
         border-bottom-color: var(--paragraph-color) !important;
-
     }
 
 
