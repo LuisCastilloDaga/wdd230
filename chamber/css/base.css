@@ -176,7 +176,9 @@ main .responsive-width{
     font-family: var(--body-font);
     display: flex;
     flex-direction: column;
+    align-items: center;
     backdrop-filter: blur(5px);
+    border-radius: 12px;
 }
 #spotlight h2{
     text-align: center;
@@ -200,7 +202,20 @@ main .responsive-width{
 .inner-spotlight hr{
     width: 100%;
 }
+.inner-spotlight p{
+    font-size: 15px;
+}
 
+.inner-spotlight a{
+    margin: 15px 0px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    background-color: var(--paragraph-color);
+    padding: 5px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
 footer p{
     font-size: 12px;
