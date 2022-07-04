@@ -254,7 +254,8 @@ function filterList(bus) {
 
 function displaySpotlight(bus) {
     let div = document.createElement('div');
-    let h2 = document.createElement('h2')
+    let h2 = document.createElement('h2');
+    let div2 = document.createElement('div');
     let image = document.createElement('img');
     let span = document.createElement('span');
     let hr = document.createElement('hr');
@@ -270,12 +271,13 @@ function displaySpotlight(bus) {
 
     image.setAttribute('src',bus.img);
     image.setAttribute('alt',`Portrait of ${bus.name}`);
-    image.style.width = "100%";
     a.setAttribute('href', bus.url);
     div.classList.add('inner-spotlight');
 
+    div2.appendChild(image)
+
     div.appendChild(h2);
-    div.appendChild(image);
+    div.appendChild(div2);
     div.appendChild(span);
     div.appendChild(hr);
     div.appendChild(p1);

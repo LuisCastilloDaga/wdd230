@@ -170,9 +170,37 @@ main .responsive-width{
 #spotlight div{
     min-height: 250px;
 } */
+#spotlight .inner-spotlight{
+    text-align: center;
+    color: white;
+    font-family: var(--body-font);
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(5px);
+}
+#spotlight h2{
+    text-align: center;
+}
 #spotlight .inner-spotlight:nth-child(3), #join{
     display: none;
 }
+
+.inner-spotlight div{
+    height: 10%;
+}
+.inner-spotlight img{
+    width: 50%;
+    min-width: 150px;
+}
+
+.inner-spotlight span{
+    padding: 10px 0px 5px;
+}
+
+.inner-spotlight hr{
+    width: 100%;
+}
+
 
 footer p{
     font-size: 12px;
