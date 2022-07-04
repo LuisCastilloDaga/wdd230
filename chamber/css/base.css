@@ -29,6 +29,7 @@ p, li, a{
     font-family: var(--body-font);
     font-size: 16px;
     margin: 0px;
+    text-decoration: none;
 }
 
 a:visited{
