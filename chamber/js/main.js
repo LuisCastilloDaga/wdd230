@@ -202,10 +202,11 @@ function weatherResults(weatherData) {
 }
 
 /* Randomly Select Spotlight */
-/* 
+
 const requestData = 'json/data.json';
 const spotlights = document.querySelector('#spotlight');
 var listMember = [];
+var selectedList = [];
 
 if (spotlights != null && listMember != null) {
     fetch(requestData)
@@ -217,12 +218,30 @@ if (spotlights != null && listMember != null) {
     const business = jsonObject['business'];
 
     business.forEach(filterList);
+    console.log(listMember);
+
+    let listIndex = random(0, listMember.length-1);
+
+    for (let i = 0; i < listIndex.length; i++) {
+        selectedList.push(listMember[listIndex[i]]);
+    }
+
+    console.log(selectedList);
 
     business.forEach(displaySpotlight);
   });
 }
+
+
 function random(min, max) {
-    return Math.floor((Math.random() * (max - min + 1)) + min);
+    let listRandom = [];
+    while (listRandom.length<=2){
+        let a = Math.floor((Math.random() * (max - min + 1)) + min)
+        if (a!=listRandom[0] && a!=listRandom[1]) {
+            listRandom.push(a);
+        } 
+    }
+    return listRandom;
 }
 
 function filterList(bus) {
@@ -231,4 +250,41 @@ function filterList(bus) {
         listMember.push(bus.order)
     } 
 
-} */
+}
+
+function displaySpotlight(bus) {
+    let div = document.createElement('div');
+    let h2 = document.createElement('h2')
+    let image = document.createElement('img');
+    let span = document.createElement('span');
+    let hr = document.createElement('hr');
+    let p1 = document.createElement('p');
+    let p2 = document.createElement('p');
+    let a = document.createElement('a');
+
+    h2.textContent = `${bus.name}`;
+    span.textContent = bus.phrase;
+    p1.textContent = bus.phone;
+    p2.textContent = bus.address;
+    a.textContent = 'Website';
+
+    image.setAttribute('src',bus.img);
+    image.setAttribute('alt',`Portrait of ${bus.name}`);
+    image.style.width = "100%";
+    a.setAttribute('href', bus.url);
+    div.classList.add('inner-spotlight');
+
+    div.appendChild(h2);
+    div.appendChild(image);
+    div.appendChild(span);
+    div.appendChild(hr);
+    div.appendChild(p1);
+    div.appendChild(p2);
+    div.appendChild(a);
+
+    if (bus.order == selectedList[0] || bus.order == selectedList[1] || bus.order == selectedList[2]) {
+        spotlights.appendChild(div);
+    } 
+
+
+}

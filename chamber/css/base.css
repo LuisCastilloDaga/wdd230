@@ -170,7 +170,7 @@ main .responsive-width{
 #spotlight div{
     min-height: 250px;
 } */
-#spotlight .thirdDiv, #join{
+#spotlight .inner-spotlight:nth-child(3), #join{
     display: none;
 }
 

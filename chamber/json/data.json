@@ -8,7 +8,8 @@
             "url": "https://www.facebook.com/Pizzas-JAMM-105218174513529/",
             "img":"images/directory/pizza-jamm.jpg",
             "mLevel":"Bronze",
-            "year":"2008"
+            "year":"2008",
+            "phrase":""
         },
         {
             "order":"2",
@@ -18,7 +19,8 @@
             "url": "https://www.facebook.com/FuentedesodaChachys",
             "img": "images/directory/chachys.jpg",
             "mLevel":"Bronze",
-            "year":"1997"
+            "year":"1997",
+            "phrase":""
         },
         {
             "order":"3",
@@ -28,7 +30,8 @@
             "url": "https://www.besifrah.com/",
             "img":"images/directory/besifrah.jpg",
             "mLevel":"Silver",
-            "year":"2002"
+            "year":"2002",
+            "phrase":"The best accessories for her."
         },
         {
             "order":"4",
@@ -38,7 +41,8 @@
             "url": "https://izzefruit.com/",
             "img":"images/directory/izze-fruit.jpg",
             "mLevel":"Silver",
-            "year":"2019"
+            "year":"2019",
+            "phrase":"Enjoy our juices!"
         },
         {
             "order":"5",
@@ -48,7 +52,8 @@
             "url": "https://www.facebook.com/claritydentPeru/",
             "img":"images/directory/clarity-dent.jpg",
             "mLevel":"Gold",
-            "year":"2014"
+            "year":"2014",
+            "phrase":"Memorable smiles."
         },
         {
             "order":"6",
@@ -58,7 +63,8 @@
             "url": "https://www.vega.pe/",
             "img":"images/directory/vega-market.jpg",
             "mLevel":"Gold",
-            "year":"1996"
+            "year":"1996",
+            "phrase":"All products you need."
         },
         {
             "order":"7",
@@ -68,7 +74,8 @@
             "url": "https://gruponautilus.com.pe/",
             "img":"images/directory/nautilus-acuario.jpg",
             "mLevel":"Bronze",
-            "year":"2019"
+            "year":"2019",
+            "phrase":""
         },
         {
             "order":"8",
@@ -78,7 +85,8 @@
             "url": "https://www.facebook.com/TortasPierosOficial/",
             "img":"images/directory/pieros.jpg",
             "mLevel":"NP",
-            "year": "2012"
+            "year": "2012",
+            "phrase":""
         },
         {
             "order":"9",
@@ -88,7 +96,8 @@
             "url": "https://clinicauniversitaria.com.pe/",
             "img":"images/directory/clinica-universitaria.jpg",
             "mLevel":"Gold",
-            "year":"2001"
+            "year":"2001",
+            "phrase":"All specialties for your health."
         }
                
     ]
