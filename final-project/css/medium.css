@@ -1,0 +1,139 @@
+@media(min-width: 895px) {
+
+   h1{
+      font-family: var(--heading);
+      font-size: 65px;
+   }
+
+   .sub-header{
+      border-bottom: solid 1px #96969636;
+      display: flex;
+      width: 90%;
+      margin: 0 auto;
+      padding: 0px;
+  }
+   .main-header{
+      display: grid;
+      grid-template-columns: 40% 60%;
+   }
+  .logo-col{
+     display: flex;
+     align-items: center;
+     width: 100%;
+     padding-left: 5vw;
+  }
+  .toggle-icon{
+     display: none;
+  }
+  .menu{
+     display: block;
+     position: inherit;
+     width: 100%;
+     border-radius: 50px 0px 0px 50px;
+   background-color: var(--text-and-headings);
+     
+  }
+  nav{
+   display: flex;
+   padding: 0px 7% 0px 0px;
+   justify-content: flex-end;
+   
+}
+   
+  nav div{
+     display: block;
+     position: relative;
+     flex: none;
+  }
+  nav a{
+     text-align: center;
+     line-height: 1.5em;
+     margin-left: 5vw;
+  }
+
+  /* Main: Temple section */
+
+  .col-50{
+   min-height: 400px;
+   
+   }
+  .section-50{
+   display: grid;
+   width: 100vw;
+   height: 40vw;
+   grid-template-columns: 50% 50%;
+
+   } 
+   /* Main: quote-and-weather-section */
+   .quote p{
+      color: var(--light-color);
+      width: 80%;
+      font-size: 30px;
+      line-height: 1.5em;
+  
+  }
+  .weather-image p{
+   font-size: 30px;
+}
+   
+
+   /* CTA section */
+   
+   .cta-section{
+      min-height: 300px;
+      display: grid;
+      grid-template-columns: 70% 30%;
+   }
+   .cta-section .cta-text{
+      padding-left: 10%;
+  }
+  .cta-btn{
+     display: flex;
+     align-content: center;
+     justify-content: center;
+  }
+   .cta-text p{
+      font-size: 40px;
+      padding: 0px;
+   }
+
+   /* Testimonial section */
+   .testimonial-section{
+      min-height: 700px;
+   }
+
+   .testimonial{
+      font-size: 55px;
+      text-align: center;
+      padding: 0px 20%;
+   }
+
+/* Footer */
+
+.main-footer-content{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+}
+.contact-info{
+   order: 1;
+}
+.map{
+   order: 3;
+   display: flex;
+   justify-content: flex-end;
+}
+.quick-links{
+   order: 2;
+}
+.desktop-iframe{
+   display: block
+}
+.mobile-iframe{
+   display: none;
+}
+
+
+
+
+
+}
