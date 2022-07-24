@@ -732,3 +732,12 @@ input[type=submit]{
     background-color: rgba(0,0,0,0.6);
     border-radius: 20px;
 }
+
+/* Reception Page */
+
+.reception-back{
+    background-image: url('../images/just-married.jpeg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+}
