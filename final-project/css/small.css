@@ -741,3 +741,20 @@ input[type=submit]{
     background-position: bottom right;
     background-size: cover;
 }
+.reception-section{
+    min-height: 700px !important;
+    width: 85% !important;
+    margin: 0 auto !important;
+}
+.reception-section img{
+    width: 90%;
+}
+
+/* Missionary Page */
+
+.missionary-back{
+    background-image: url('../images/lds-missionary.jpeg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
