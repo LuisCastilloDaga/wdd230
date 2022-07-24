@@ -1,0 +1,49 @@
+{
+    "temples":[
+        {
+            "order":"1",
+            "name": "Lima Peru Temple",
+            "address":" 6420 Javier Prado East, La Molina, Lima, Peru",
+            "phone": "(51) 1-612-7200",
+            "img":"images/temples/lima_peru_temple_lds.jpeg",
+            "services": "Clothing rental available, No cafeteria available, Patron housing available, Distribution center nearby",
+            "announced":"1 April 1981",
+            "groundbreaking": "11 September 1982",
+            "dedicated":"10 January 1986"
+        },
+        {   
+            "order":"2",
+            "name": "Fort Lauderdale Florida Temple",
+            "address":"3901 SW 154th Ave, Davie FL 33331, United States",
+            "phone": "(1) 954-382-8390",
+            "img":"images/temples/fort_lauderdale_florida_temple.jpg",
+            "services": "No clothing rental available, No dining room available, No lodging available for participants, No distribution center nearby",
+            "announced":"October 3, 2009",
+            "groundbreaking": "June 18, 2011",
+            "dedicated":"May 4, 2014"
+        },
+        {   
+            "order":"3",
+            "name": "Portland Oregon Temple",
+            "address":"13600 Kruse Oaks Blvd, Lake Oswego OR 97035-8602, United States",
+            "phone": "(1) 503-639-7066",
+            "img":"images/temples/portland_oregon_temple.jpeg",
+            "services": "Clothing rental available, No dining available, No lodging available for participants, Nearby distribution center",
+            "announced":"April 7, 1984",
+            "groundbreaking": "September 20, 1986",
+            "dedicated":"August 19, 1989"
+        },
+        {   
+            "order":"4",
+            "name": "Sydney Australia Temple",
+            "address":"756 Pennant Hills Road, Corner Pennant Hills Rd & Moseley St., Carlingford NSW 2118, Australia",
+            "phone": "(61) 2-9841-5471",
+            "img":"images/temples/sydney_australia_temple.jpeg",
+            "services": "No clothing rental available, No dining room available, Lodging available for participants, Nearby distribution center",
+            "announced":"April 2, 1980",
+            "groundbreaking": "August 13, 1982",
+            "dedicated":"September 20, 1984"
+        }
+    ]
+
+}

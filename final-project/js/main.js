@@ -1,3 +1,27 @@
+/* Current Date */
+
+const now = new Date();
+console.log(now);
+const d = new Date(document.lastModified);
+const day = d.getDate();
+const month = d.getMonth()+1;
+const year = d.getFullYear();
+const hours = d.getHours();
+const minutes = d.getMinutes();
+const seconds = d.getSeconds();
+
+const fulldate = `Last Updated: ${month}/${day}/${year} ${hours}:${minutes}:${seconds}`;
+
+
+document.getElementById('lastmodification').textContent = fulldate;
+
+document.querySelector('#year').textContent = new Date().getFullYear();
+
+
+
+
+/* Menu */
+
 var toggleIcon = document.querySelector('.toggle-icon');
 var menuMobile = document.querySelector('.menu');
 
@@ -16,13 +40,6 @@ const temperature = document.querySelector('#temperature');
 const weatherIcon = document.querySelector('#weather-ic');
 const condition = document.querySelector('#condition');
 const humidity = document.querySelector('#humidity');
-
-const fCon1 = document.querySelector('#f-description1');
-const fCon2 = document.querySelector('#f-description2');
-const fCon3 = document.querySelector('#f-description3');
-const h1 = document.querySelector('#hour1');
-const h2 = document.querySelector('#hour2');
-const h3 = document.querySelector('#hour3');
 
 const url = 'https://api.openweathermap.org/data/2.5/weather?q=Lima&appid=6725ba7850ae02903340395b04dba12f&units=metric';
 const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?q=Lima&appid=6725ba7850ae02903340395b04dba12f&units=metric&cnt=3';
@@ -83,5 +100,90 @@ async function apiFetch() {
             forH.textContent = `${date.getDate()}th, ${date.getHours()}hrs.`;
             
        }
-       
     }
+
+
+/* Temple Directory Page */
+
+const requestURL = 'json/data.json';
+const cards = document.querySelector('.cards');
+
+if (cards != null) {
+    fetch(requestURL)
+    .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    console.table(jsonObject);  // temporary checking for valid response and data parsing
+    const temples = jsonObject['temples'];
+
+    temples.forEach(displayTemples);
+  });
+}
+
+
+function displayTemples(temple) {
+    let card = document.createElement('section');
+    let h2 = document.createElement('h2');
+    let ul = document.createElement('ul');
+    let li1 = document.createElement('li');
+    let li2 = document.createElement('li');
+    let li3 = document.createElement('li');
+    let li4 = document.createElement('li');
+    let li5 = document.createElement('li');
+    let li6 = document.createElement('li');
+    let div = document.createElement('div');
+    let a = document.createElement('a');
+    let portrait = document.createElement('img');
+
+    h2.textContent = `${temple.name}`;
+    li1.innerHTML = `<strong>Address:</strong> ${temple.address}`;
+    li2.innerHTML = `<strong>Phone number:</strong> ${temple.phone}`;
+    li3.innerHTML = `<strong>Services:</strong> ${temple.services}`;
+    li4.innerHTML = `<strong>Announced:</strong> ${temple.announced}`;
+    li5.innerHTML = `<strong>Groundbreaking:</strong> ${temple.groundbreaking}`;
+    li6.innerHTML = `<strong>Dedicated:</strong> ${temple.dedicated}`;
+    a.innerHTML = '<i class="fa-solid fa-thumbs-up"></i>';
+
+    portrait.setAttribute('src', temple.img);
+    portrait.setAttribute('alt', `Portrait of ${temple.name}`);
+    card.setAttribute('loading', 'lazy');
+    a.classList.add('like-btn');
+
+    div.appendChild(portrait);
+    ul.append(li1, li2, li3, li4, li5, li6);
+
+    card.appendChild(h2);
+    card.appendChild(div);
+    card.appendChild(ul);
+    card.appendChild(a);
+
+    document.querySelector('div.cards').appendChild(card);
+
+}
+
+
+const listBtn = document.querySelector('#list');
+const gridBtn = document.querySelector('#grid');
+
+if (listBtn!= null && gridBtn !=null) {
+    gridBtn.onclick = function () {
+        cards.classList.add("grid");
+        cards.classList.remove("list");
+        
+    }
+    
+    listBtn.onclick = function () {
+        cards.classList.add("list");
+        cards.classList.remove("grid");
+    }
+    
+} 
+
+
+/* Reservation Page: Form */
+
+var datetimeField = document.querySelector('#date-time-local');
+if (datetimeField != null) {
+    datetimeField.textContent = `${now.getMonth()+1}/${now.getDate()}/${now.getFullYear()} ${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`;    
+}

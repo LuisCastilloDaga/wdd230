@@ -77,6 +77,7 @@ header{
 .logo img{
     width: 100%;
     max-width: 200px;
+    filter: brightness(0) invert(1);
 }
 .toggle-icon{
     display: flex;
@@ -413,4 +414,294 @@ footer{
 .sub-footer p{
     color: inherit;
     font-size: 12px;
+}
+
+
+
+/* ::::::::::::::::::::::::  TEMPLE PAGE  :::::::::::::::::::::::::::: */
+
+
+.hero-temple{
+    background: url('../images/angel-moroni.jpeg') !important;
+    background-position: top center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.temple-directory{
+    padding: 160px 0px 80px;
+}
+.toggle-section{
+    margin: 50px 0px 0px;
+    display: flex;
+}
+.toggle-section div{
+    font-family: var(--text-and-headings);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding: 2.5px 15px;
+    cursor: pointer;
+}
+.toggle-section div p{
+    padding-top: 2px;
+}
+.toggle-section .fa-list::before{
+    font-size: 18px;
+    margin-right: 10px;
+}
+.toggle-section .fa-grip::before{
+    font-size: 20px !important;
+    margin-right: 10px;
+}
+.temple-directory{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 60px;
+    padding: 40px 0px;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+.grid section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #e6faf4;
+    padding: 20px;
+    position: relative;
+    min-height: 420px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.13);
+    
+}
+
+
+.grid section div{
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.grid section div img{
+    max-height: 180px;
+    width: 70%;
+    
+}
+.cards section span{
+    text-align: center;
+    font-style: italic;
+}
+.cards section ul{
+    list-style: none;
+}
+.cards strong{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cards ul li{
+    font-size: 14px;
+    padding: 5px 0px;
+}
+.grid a{
+    text-align: center;
+    padding: 12px 0px 10px;
+    letter-spacing: 0.1em;
+    line-height: 1.2em;
+    text-decoration: none;
+    width: 30%;
+    color: var(--text-and-headings);
+    border-radius: 12px;
+    bottom: 25px;
+    cursor: pointer;
+}
+
+.list{
+    display: block;
+    padding: 40px 0px;
+}
+.list section{
+    display: grid;
+    gap: 15px;
+    grid-template: 50px 150px 50px/1fr 1fr !important;
+    
+    background-color: #e6faf4;
+    margin-bottom: 50px;
+    padding: 40px;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.13);
+    overflow: hidden;
+    
+}
+.list section h2{
+    text-align: left !important;
+    grid-area: 1/1/2/2;
+    display: flex;
+    align-items: center;
+}
+.list section div {
+    grid-area: 2/1/3/2;
+    height: 150px;
+    display: flex;
+    align-items: flex-start;
+}
+.list section div img{
+    max-height: 150px;
+    width: 80%;
+    
+}
+.list section ul{
+    grid-area: 1/2/3/3;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.list ul li{
+    font-size: 16px;
+    padding: 5px 0px;
+}
+.list a{
+    grid-area: 3/2/4/3;
+    text-align: center;
+    padding: 12px 20px 10px;
+    letter-spacing: 0.1em;
+    line-height: 1.2em;
+    text-decoration: none;
+    color: var(--text-and-headings);
+    border-radius: 12px;
+}
+
+
+/* Reservation Page */
+
+.hero-reservation{
+    background-image: url('../images/booking.jpeg') !important;
+}
+
+.form-section{
+    padding: 50px 0px 120px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 40%;
+    margin: 0 auto;
+}
+.form-section div:first-child p{
+    font-size: 18px;
+    line-height: 1.2em;
+    font-family: var(--body-font);
+
+}
+.form-section div:first-child h1{
+    text-align: left !important;
+    font-size: 60px;
+}
+
+.form-section div{
+    padding-top: 40px;
+} 
+.form-section div form{
+    display: flex;
+    flex-direction: column;
+}
+.form-section div label{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section label.hidden{
+    display: none !important;
+}
+
+.form-section label{
+    padding-bottom: 16px;
+    letter-spacing: 0.05em;
+    line-height: 2em;
+    font-weight: bold;
+    font-size: 14px;
+    font-family:var(--heading-font) !important;
+
+}
+
+.form-section input{
+    height: 30px;
+    border: 1px solid rgba(128, 128, 128, 0.473);
+    border-radius: 4px;
+    padding: 0px 10px;
+}
+
+.form-section select{
+    height: 35px;
+    border: 1px solid rgba(128, 128, 128, 0.473);
+    border-radius: 4px;
+    padding: 0px 10px;
+}
+
+.form-section textarea{
+    border: 1px solid rgba(128, 128, 128, 0.473);
+    border-radius: 4px;
+    padding: 10px 10px;
+}
+
+input[type=submit]{
+    color: white;
+    font-weight: 800;
+    font-family: var(--text-and-paragraphs);
+    letter-spacing: 0.2em;
+    line-height: 2em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    min-height: 40px;
+    min-width: 85px;
+    width: 25%;
+    margin-top: 10px;
+    background-color: var(--text-and-headings);
+}
+.horizontal-lbl {
+    display: flex;
+    flex-direction: row !important;
+}
+.horizontal-lbl span{
+    width: 110px;
+    font-weight: 500;
+}
+
+/* Services Page */
+
+.services-back{
+    background-image: url('../images/happy-family.jpeg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.service{
+    min-height: 300px;
+    background-color: var(--second-accent);
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    border-radius: 20px;
+}
+.col-50 a{
+    width: 80%;
+}
+
+.service p{
+    font-size: 40px;
+    width: 80%;
+    text-align: center;
+    font-weight: 900;
 }
